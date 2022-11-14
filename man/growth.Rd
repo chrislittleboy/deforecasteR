@@ -6,15 +6,6 @@
 \usage{
 growth(trees, r_l, min, max)
 }
-\arguments{
-\item{trees}{location, age and protected status of trees}
-
-\item{r_l}{rate of growth adjusted to the ratio of existing trees to maximum capacity of the landscape}
-
-\item{min}{min age at which trees start to seed}
-
-\item{max}{max age at which trees finish seeding}
-}
 \description{
 Grows forest
 }

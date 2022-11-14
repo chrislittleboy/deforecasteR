@@ -1,9 +1,5 @@
 #' Grows forest
 #' @inheritParams deforecast
-#' @param trees location, age and protected status of trees
-#' @param r_l rate of growth adjusted to the ratio of existing trees to maximum capacity of the landscape
-#' @param min min age at which trees start to seed
-#' @param max max age at which trees finish seeding
 
 growth <- function(trees, 
                    r_l,
