@@ -6,6 +6,15 @@
 \usage{
 growth(trees, r_l, min, max)
 }
+\arguments{
+\item{trees}{Age and location profile of trees}
+
+\item{r_l}{Logistic rate of growth}
+
+\item{min}{Minimum age at which trees can seed}
+
+\item{max}{Max age at which trees stop seeding}
+}
 \description{
 Grows forest
 }

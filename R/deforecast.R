@@ -36,6 +36,8 @@
 #' @param dispersion The distance that seeds can travel from the seeding tree.
 #' 
 #' @param years The number of years for the simulation
+#' 
+#' 
 #' @import Rcpp
 #' 
 # This is the main function for the simulation. 
@@ -126,7 +128,7 @@ break;
 
 r_l <- rate(trees, r,k) # calculates logistic growth rate based on carrying capacity
 if (r_l > 0) {
-trees <- growth(trees, r_l, maturity, max_age); # grows the forest
+trees <- growth(trees = trees, r_l = r_l, min = maturity, max = max_age); # grows the forest
 }
 tree_results[[t+1]] <- trees;
 }
