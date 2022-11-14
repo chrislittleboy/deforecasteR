@@ -1,0 +1,18 @@
+Package: deforecasteR
+Title: Agent-Based Simulation of Deforestation
+Description: This package is an agent-based model which simulates deforestation as a public good conflict where forests are both a resource to be consumed by local populations and a resource to be conserved by governments.
+    The location of agents in our model can be generated, or use input data from gridded population count data such as LandScan or WorldPop.
+    Likeise, the location of trees in our model can be generated, or use input data from numerous remote sensing sources on forest cover such as Hansen, MODIS.
+Version: 1.0
+Date: 2022-02-09
+Authors@R: 
+  person("Chris","Littleboy", email = "chris.littleboy@googlemail.com", role = c("aut", "cre"))
+Encoding: UTF-8
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8)
+LinkingTo: Rcpp
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
