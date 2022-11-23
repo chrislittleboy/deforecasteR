@@ -2,7 +2,7 @@
 % Please edit documentation in R/getpeople.R
 \name{get_people}
 \alias{get_people}
-\title{Makes people}
+\title{Gets people from input data}
 \usage{
 get_people(ppl_loc, ppl_scaling)
 }
@@ -12,5 +12,5 @@ get_people(ppl_loc, ppl_scaling)
 \item{ppl_scaling}{Only if explicit_people is TRUE. A number between 0 and 1 to scale down the # of people on the map.}
 }
 \description{
-Makes people
+Gets people from input data
 }
