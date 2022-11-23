@@ -3,17 +3,13 @@
 #' @inheritParams deforecast
 #' @return A 2-member list with protected and unprotected trees.
 
-get_trees <- function(p_loc, # 3 column matrix (x/y/value)
-                      np_loc, 
-                      mean_age, 
-                      sd_age){
+get_trees <- function(p_loc, # 2 column matrix (x/y)
+                      np_loc, # 2 column matrix (x/y)
+                      mean_age, # integer 
+                      sd_age) # integer
+  {
   
-p_loc <- p_loc[,1:2] # gets x/y locations of protected trees
-colnames(p_loc) <- c("x","y")
-np_loc <- np_loc[,1:2] # gets x/y locations of unprotected trees
-colnames(np_loc) <- c("x","y")
 # gets age of trees (normally distributed)
-
 age_p <- rnorm(n = length(p_loc[,1]), mean = mean_age, sd = sd_age) 
 age_p[age_p < 0] <- 0 # negative ages to 0
 age_p <- round(age_p, digits = 0) # rounds to nearest year
