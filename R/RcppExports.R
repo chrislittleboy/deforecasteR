@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 chop <- function(x1, x2, y1, y2, p, value, m_cost, t_cost, mobility) {
-    .Call('_deforecasteR_chop', PACKAGE = 'deforecasteR', x1, x2, y1, y2, p, value, m_cost, t_cost, mobility)
+    .Call(`_deforecasteR_chop`, x1, x2, y1, y2, p, value, m_cost, t_cost, mobility)
 }
 
