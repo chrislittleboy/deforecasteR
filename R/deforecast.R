@@ -1,7 +1,9 @@
 #' Run deforestation simulation
 #' 
 #' @importFrom Rcpp sourceCpp
-#' @useDynLib deforecasteR, .registration = TRUE 
+#' @useDynLib deforecasteR, .registration=TRUE
+#' @export
+#' 
 #' @param explicit If FALSE, places people and trees randomly on the landscape. If TRUE takes input data.
 #' 
 #' @param ppl_loc Only if explicit_people is TRUE. A 4 column matrix with id, x/y locations and budget.
