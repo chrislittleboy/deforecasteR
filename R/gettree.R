@@ -21,7 +21,6 @@ age_np <- round(age_np, digits = 0)
 np_loc <- matrix(cbind(np_loc, age_np, rep(0, length(age_np))), ncol = 4)
 
 trees <- rbind(p_loc,np_loc);
-trees <- matrix(unlist(matrix(trees)), ncol = 4)
-
+trees <- data.frame(matrix(unlist(matrix(trees)), ncol = 4))
 return(trees);
 }
