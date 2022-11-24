@@ -15,14 +15,10 @@ growth <- function(trees,
     age[age > max] = 0;
     age[age != 0] <- 1;
     new <- subset(cbind(trees, age), age != 0);
-    n_new <- ceiling(length(trees[,3]) * r_l);
+    n_new <- ceiling(nrow(trees) * r_l);
     new <- randomRows(trees, n_new,age); # gets random rows from the matrix of trees which can seed
     new[,4] <- 0; # age of new trees is 0
-    newtrees <- rbind(trees, new[,1:4]); # combines old and new trees
-    newtrees <- data.frame(matrix(
-        newtrees[order(newtrees[,4],decreasing = TRUE), ], 
-        ncol = 4)
-      )
+    newtrees <- rbind(trees, new); # combines old and new trees
   return(newtrees)
 }
 

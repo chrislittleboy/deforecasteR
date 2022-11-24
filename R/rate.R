@@ -4,8 +4,9 @@
 #' @export
 
 rate <- function(trees, k, r) {
-k <- k * max(trees[,1]) * max(trees[,2]);
-n <- length(trees[,1]);
-s <- n + (r * n) * (1 - n/k);
+t <- k * max(trees[,1]) * max(trees[,2]);
+n <- nrow(trees);
+s <- n + (r * n) * (1 - n/t);
 r_l <- (s-n)/n;
-return(r_l)}
+return(r_l)
+}

@@ -128,7 +128,7 @@ if(length(matrix(trees, ncol = 4)[,1]) == 0){
 break;
   } else {
 
-r_l <- rate(trees, r,k) # calculates logistic growth rate based on carrying capacity
+r_l <- rate(trees = trees, r = r,k = k) # calculates logistic growth rate based on carrying capacity
 if (r_l > 0) {
 trees <- growth(trees = trees, r_l = r_l, min = maturity, max = max_age); # grows the forest
 }
