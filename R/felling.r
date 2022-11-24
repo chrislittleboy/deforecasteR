@@ -6,9 +6,8 @@
 felling <- function(people, trees, value, management_cost, travel_cost, mobility){
 
 trees <-  cbind(
-    1:length(trees[,1]), # new ids for trees
-    matrix(trees[,1:4], ncol = 4)); # 1 (protected), 0 (not protected)
-
+    1:nrow(trees), # new ids for trees
+    trees); # 1 (protected), 0 (not protected)
 # does the logging and moving (see c++ function in src)  
   
   logged <- chop(x1 = people[,1], 
