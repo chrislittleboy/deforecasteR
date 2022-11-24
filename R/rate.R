@@ -1,6 +1,7 @@
 #' Does the felling (peoples' budgets change and trees cease to exist)
 #' @inheritParams deforecast
 #' @param trees location, age and protected status of trees
+#' @export
 
 rate <- function(trees, k, r) {
 k <- k * max(trees[,1]) * max(trees[,2]);

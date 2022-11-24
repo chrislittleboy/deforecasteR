@@ -3,6 +3,7 @@
 #' @param trees Age and location profile of trees
 #' @param min Minimum age at which trees can seed
 #' @param max Max age at which trees stop seeding
+#' @export
 
 growth <- function(trees, 
                    r_l,

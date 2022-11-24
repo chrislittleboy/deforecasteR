@@ -1,5 +1,6 @@
 #' Makes people
 #' @inheritParams deforecast
+#' @export
 
 make_people <- function(
   xdim, 

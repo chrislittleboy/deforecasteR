@@ -2,6 +2,7 @@
 #' @inheritParams deforecast
 #' @param people Location of agents on the landscape
 #' @param trees Location, age and protected status of trees on the landscape
+#' @export
 
 felling <- function(people, trees, value, management_cost, travel_cost, mobility){
 

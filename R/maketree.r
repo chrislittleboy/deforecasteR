@@ -2,6 +2,7 @@
 #' @importFrom stats quantile rnorm aggregate
 #' @inheritParams deforecast
 #' @return A 2-member list with protected and unprotected trees.
+#' @export
 
 make_trees <- function(
   xdim,

@@ -2,6 +2,7 @@
 #' @importFrom stats quantile rnorm aggregate
 #' @inheritParams deforecast
 #' @return A 2-member list with protected and unprotected trees.
+#' @export
 
 get_trees <- function(p_loc, # 2 column matrix (x/y)
                       np_loc, # 2 column matrix (x/y)

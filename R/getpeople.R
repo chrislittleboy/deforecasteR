@@ -1,5 +1,6 @@
 #' Gets people from input data
 #' @inheritParams deforecast
+#' @export
 
 get_people <- function(ppl_loc, ppl_scaling){
   if(ppl_scaling != 1){
