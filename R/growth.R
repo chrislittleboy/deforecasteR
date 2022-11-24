@@ -19,9 +19,9 @@ growth <- function(trees,
     new <- randomRows(trees, n_new,age); # gets random rows from the matrix of trees which can seed
     new[,4] <- 0; # age of new trees is 0
     newtrees <- rbind(trees, new[,1:4]); # combines old and new trees
-    newtrees <- matrix(
+    newtrees <- data.frame(matrix(
         newtrees[order(newtrees[,4],decreasing = TRUE), ], 
-        ncol = 4
+        ncol = 4)
       )
   return(newtrees)
 }
